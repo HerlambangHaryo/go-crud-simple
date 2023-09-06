@@ -1,13 +1,13 @@
+// main.go
+
 package main
 
 import (
 	"log"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-
-	
 	"github.com/HerlambangHaryo/go-crud-simple/platform/database"
-	"github.com/HerlambangHaryo/go-crud-simple/app/controllers" 
+	"github.com/HerlambangHaryo/go-crud-simple/app/models/book"
 )
 
 func main() {
@@ -20,11 +20,9 @@ func main() {
 
 func connectToDatabase() {
 	database.Connect()
+	book.AutoMigrate()
 }
 
 func registerRoutes(app *fiber.App) {
 	// ...
 }
-		
-	
-		

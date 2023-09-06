@@ -1,4 +1,4 @@
-module go-crud-simple
+module github.com/HerlambangHaryo/go-crud-simple
 
 go 1.20
 
