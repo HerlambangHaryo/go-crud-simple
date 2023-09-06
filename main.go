@@ -1,17 +1,27 @@
 // main.go
-
 package main
 
 import (
 	"log"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	"github.com/HerlambangHaryo/go-crud-simple/platform/database" 
+	"github.com/HerlambangHaryo/go-crud-simple/platform/database"
+	"github.com/HerlambangHaryo/go-crud-simple/app/models" 
 	"github.com/HerlambangHaryo/go-crud-simple/pkg/routes"
+	"github.com/gofiber/template/html/v2"
+
 )
+
 func main() {
 	connectToDatabase()
-	app := fiber.New()
+
+	engine := html.New("./resources/views", ".html")
+	app := fiber.New(fiber.Config{
+		Views: engine,
+	})
+
+    app.Static("/", "./public")
+   
 	app.Use(logger.New())
 	registerRoutes(app)
 	log.Fatal(app.Listen(":8000"))

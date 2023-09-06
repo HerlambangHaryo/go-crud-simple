@@ -1,0 +1,60 @@
+<div id="datatable" class="mb-5">
+	<div class="card">
+		<div class="card-header">
+			Data Rapidapi
+		</div>
+		<div class="card-body"> 
+			<table id="datatableDefault" class="table myTable ">
+				<thead class=" ">
+					<tr>
+						<th class="text-center" width="10%">No.</th>
+						<th class="text-center">Account</th>
+						<th class="text-center">Reset at</th>
+						<th class="text-center">Active</th>
+						<th class="text-center">Counter</th>
+						<th class="text-center">Action</th>
+						<th class="text-center">Updated at</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{range .Users}} 
+					<tr>
+						<td class="text-center">
+							1
+						</td>
+						<td class="text-left">
+							herlambangharyo@gmail.com
+							<br/>
+							<small>
+								3a67de8c25msha3a34a82f226748p10786ajsn27ba3644d902
+							</small>
+						</td>
+						<td class="text-center">
+							17 hours
+						</td>
+						<td class="text-center">
+							
+						</td>
+						<td class="text-center">
+							0
+						</td>
+						<td class="text-center">
+							<a href="http://localhost/pr_laravel_8_buzz_2023_06/Rapidapi/on/1"
+								class="btn btn-default btn-sm" >
+								On
+							</a>
+							<a href="http://localhost/pr_laravel_8_buzz_2023_06/Rapidapi/reset/1"
+								class="btn btn-default btn-sm" >
+								Reset
+							</a>
+						</td>
+						<td class="text-center">
+							2023-06-26 22:41:54
+						</td>
+					</tr> 
+					{{end}}
+				</tbody>
+			</table> 
+		</div>
+	</div>
+</div>

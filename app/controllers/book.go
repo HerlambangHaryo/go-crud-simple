@@ -3,24 +3,35 @@ package controllers
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/HerlambangHaryo/go-crud-simple/app/models/book"
-)
+	"github.com/HerlambangHaryo/go-crud-simple/app/models"
+	"strconv"
+) 
 
 // Get all books
 func GetBooks(c *fiber.Ctx) error {
-	b := new(book.Book)
+	b := new(models.Book)
 	books, err := b.GetBooks()
 	if err != nil {
 		return c.Status(500).SendString(err.Error())
 	}
-	return c.JSON(books)
+	// return c.JSON(books) 
+	 
+    return c.Render("contents/books/index", fiber.Map{
+        "Books": books,
+    },"templates/studiov30/pageblank")
 }
 
 // Get a book by id
 func GetBook(c *fiber.Ctx) error {
 	id := c.Params("id")
-	b := new(book.Book)
-	book, err := b.GetBook(id)
+	b := new(models.Book)
+	// convert id from string to uint
+	idInt, err := strconv.Atoi(id)
+	if err != nil {
+		return c.Status(400).SendString("Invalid id")
+	}
+	idUint := uint(idInt)
+	book, err := b.GetBook(idUint)
 	if err != nil {
 		return c.Status(500).SendString(err.Error())
 	}
@@ -32,7 +43,7 @@ func GetBook(c *fiber.Ctx) error {
 
 // Create a book
 func CreateBook(c *fiber.Ctx) error {
-	b := new(book.Book)
+	b := new(models.Book)
 	if err := c.BodyParser(b); err != nil {
 		return c.Status(400).SendString(err.Error())
 	}
@@ -46,8 +57,14 @@ func CreateBook(c *fiber.Ctx) error {
 // Update a book by id
 func UpdateBook(c *fiber.Ctx) error {
 	id := c.Params("id")
-	b := new(book.Book)
-	err := b.UpdateBook(id)
+	b := new(models.Book)
+	// convert id from string to uint
+	idInt, err := strconv.Atoi(id)
+	if err != nil {
+		return c.Status(400).SendString("Invalid id")
+	}
+	idUint := uint(idInt)
+	err = b.UpdateBook(idUint)
 	if err != nil {
 		return c.Status(500).SendString(err.Error())
 	}
@@ -57,7 +74,7 @@ func UpdateBook(c *fiber.Ctx) error {
 	if err := c.BodyParser(&b); err != nil {
 		return c.Status(400).SendString(err.Error())
 	}
-	err = b.SaveBook()
+	err = b.UpdateBook(idUint) // change SaveBook to UpdateBook
 	if err != nil {
 		return c.Status(500).SendString(err.Error())
 	}
@@ -67,8 +84,14 @@ func UpdateBook(c *fiber.Ctx) error {
 // Delete a book by id
 func DeleteBook(c *fiber.Ctx) error {
 	id := c.Params("id")
-	b := new(book.Book)
-	err := b.DeleteBook(id)
+	b := new(models.Book)
+	// convert id from string to uint
+	idInt, err := strconv.Atoi(id)
+	if err != nil {
+		return c.Status(400).SendString("Invalid id")
+	}
+	idUint := uint(idInt)
+	err = b.DeleteBook(idUint)
 	if err != nil {
 		return c.Status(500).SendString(err.Error())
 	}
