@@ -1,15 +1,14 @@
-package book
+package models
 
 import (
 	"fmt"
 	"github.com/HerlambangHaryo/go-crud-simple/platform/database" 
 )
- 
+
 type Book struct {
 	ID   uint   `json:"id" gorm:"primaryKey"`
-	Name string `json:"name" gorm:"size:255"`
+	Name string `json:"name"`
 }
-
 
 // Migrate the schema of database if needed
 func AutoMigrate() {
@@ -18,7 +17,7 @@ func AutoMigrate() {
 		panic("Failed to migrate database")
 	}
 	fmt.Println("Database migrated")
-}
+} 
 
 // Get all books
 func (b *Book) GetBooks() ([]Book, error) {

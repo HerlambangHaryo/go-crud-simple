@@ -6,10 +6,9 @@ import (
 	"log"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	"github.com/HerlambangHaryo/go-crud-simple/platform/database"
-	"github.com/HerlambangHaryo/go-crud-simple/app/models/book"
+	"github.com/HerlambangHaryo/go-crud-simple/platform/database" 
+	"github.com/HerlambangHaryo/go-crud-simple/pkg/routes"
 )
-
 func main() {
 	connectToDatabase()
 	app := fiber.New()
@@ -20,9 +19,9 @@ func main() {
 
 func connectToDatabase() {
 	database.Connect()
-	book.AutoMigrate()
+	models.AutoMigrate()
 }
 
 func registerRoutes(app *fiber.App) {
-	// ...
+	routes.SetupRoutes(app)
 }
