@@ -7,7 +7,7 @@ import (
 
 	
 	"github.com/HerlambangHaryo/go-crud-simple/platform/database"
-	"github.com/HerlambangHaryo/go-crud-simple/app/controllers"
+	"github.com/HerlambangHaryo/go-crud-simple/app/controllers" 
 )
 
 func main() {

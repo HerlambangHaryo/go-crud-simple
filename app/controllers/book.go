@@ -4,7 +4,7 @@ package controllers
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/<username>/go-crud-simple/platform/database"
-	"github.com/<username>/go-crud-simple/app/models"
+	"github.com/<username>/go-crud-simple/app/models" 
 )
 
 // Get all books
