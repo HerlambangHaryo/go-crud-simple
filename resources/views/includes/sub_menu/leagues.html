@@ -1,0 +1,106 @@
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <div class="btn-group">
+            <a
+                href="/Leagues/Today/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary
+                                ">
+                Today
+            </a>
+            <a
+                href="/Leagues/Notstarted/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary  
+                {{ if eq .Title "League Not Started" }} 
+                    active
+                {{ end }}
+                                ">
+                Not Started
+            </a>
+            <a
+                href="/Leagues/Matchfinished/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary 
+                {{ if eq .Title "League Match Finished" }}
+                    active
+                {{ end }}
+                                ">
+                Match Finished
+            </a>
+            <a
+                href="/Leagues/Standing/{{ .leagueapi_id }}/{{ .season }}/Goals"
+                class="btn btn-sm btn-secondary
+                                ">
+                Standings
+            </a>
+            <a
+                href="/Leagues/Standing/{{ .leagueapi_id }}/{{ .season }}/Corners"
+                class="btn btn-sm btn-secondary
+                                ">
+                Corners
+            </a>
+            <a
+                href="/Leagues/Standing/{{ .leagueapi_id }}/{{ .season }}/Shots"
+                class="btn btn-sm btn-secondary
+                                ">
+                Total Shots 
+            </a>
+            <a
+                href="/Leagues/Standing/{{ .leagueapi_id }}/{{ .season }}/Shots"
+                class="btn btn-sm btn-secondary
+                                ">
+                Shots On Goal
+            </a>
+            <a
+                href="/Leagues/Standing/{{ .leagueapi_id }}/{{ .season }}/Fouls"
+                class="btn btn-sm btn-secondary
+                                ">
+                Fouls
+            </a> 
+            <a
+                href="/Leagues/Standing/{{ .leagueapi_id }}/{{ .season }}/Fouls"
+                class="btn btn-sm btn-secondary
+                                ">
+                Offsides
+            </a> 
+        </div>
+    </div>
+</div>
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <div class="btn-group">
+            <a
+                href="/ModelTesting/Leagues/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary
+                                "> 
+                Model Testing
+            </a> 
+            <a
+                href="/AnytimeGoalScorers/Leagues/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary
+                                ">
+                Anytime Goal Scorers
+            </a> 
+            <a
+                href="/Pattern/PrePre/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary
+                                ">
+                Pre Pre
+            </a>
+            <a
+                href="/Pattern/PreEnd/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary
+                                ">
+                Pre End
+            </a>
+            <a 
+                href="/Pattern/Response/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary" >
+                Response 4
+            </a> 
+            <a 
+                href="/Pattern/Response/{{ .leagueapi_id }}/{{ .season }}"
+                class="btn btn-sm btn-secondary" >
+                Ags
+            </a> 
+        </div>
+    </div>
+</div>

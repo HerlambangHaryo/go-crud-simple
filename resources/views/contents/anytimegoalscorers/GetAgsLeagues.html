@@ -1,0 +1,117 @@
+{{template "includes/sub_menu/leagues" .}}
+
+<div id="datatable" class="mb-5">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">
+                    Data Players
+                </div>
+                <div class="col-6 text-end">                  
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div>
+                <table  class="table myTable ">
+                    <thead class=" ">
+                        <tr>
+                            <th class="text-center" width="10%">ID.</th>
+                            <th class="text-center">League</th>
+                            <th class="text-center">Match</th>
+                            <th class="text-center">Player</th>
+                            <th class="text-center">Pre</th>
+                            <th class="text-center">End</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .Data}} 
+                        <tr>
+                            <td class="text-center">
+                                {{ .ID }}
+                            </td>
+                            <td class="text-left">
+                                <i class="flag-icon flag-icon-{{ .LeagueTeam.CountryTeam.Code }} "
+                                    title="{{ .LeagueTeam.CountryTeam.Code }}"
+                                    id="{{ .LeagueTeam.CountryTeam.Code }}"></i>
+                                    <a
+                                    href="http://localhost/pr_laravel_8_buzz_2023_06/Anytimegoalscorers/country/Brazil"
+                                    class=" ">
+                                    {{ .LeagueTeam.CountryName }}
+                                    </a>
+                                <br/>
+                                <a
+                                    href="http://localhost/pr_laravel_8_buzz_2023_06/Anytimegoalscorers/league/71"
+                                    class=" ">
+                                    #{{ .LeagueapiID }}
+                                    {{ .LeagueTeam.Name }} - {{ .Season }}
+                                </a>
+                                <br/>
+                                {{ .FixtureAPIID }} 
+                            </td>
+                            <td class="text-center"> 
+                                <a
+                                    href="/Teams/{{ .FixtureTeam.HomeTeam.TeamAPIID }}"
+                                    target="_blank"> 
+                                    {{ .FixtureTeam.HomeTeam.Name }}
+                                </a> 
+                                <br/>
+                                <a
+                                    href="/Teams/{{ .FixtureTeam.AwayTeam.TeamAPIID }}"
+                                    target="_blank"> 
+                                    {{ .FixtureTeam.AwayTeam.Name }}
+                                </a> 
+                                <br/> 
+                                
+                                {{template "components/fixture_status" .}}
+                            </td>
+                            <td class="text-left">
+ 
+                                <a
+                                    href="/AnytimeGoalScorers/player/{{ .ValueStr }}"
+                                    class=" ">
+                                    {{ .Value }}
+                                </a>
+                            </td>
+                            <td class="text-center"> 
+                                {{ if .PreOdd }}
+                                    <a
+                                        href="http://localhost/pr_laravel_8_buzz_2023_06/Aryatips/tip/71/2023/1006003/92/de_Souza_Alerrando/2.2"
+                                        target="_blank"
+                                        class=" ">
+                                        {{ .PreOdd }}
+                                    </a>
+                                {{ else }} 
+                                    nil
+                                {{ end }} 
+
+                            </td>
+                            <td class="text-center">
+                                {{ if .EndOdd }}
+                                    <a
+                                        href="http://localhost/pr_laravel_8_buzz_2023_06/Aryatips/tip/71/2023/1006003/92/de_Souza_Alerrando/2.2"
+                                        target="_blank"
+                                        class=" ">
+                                        {{ .EndOdd }}
+                                    </a>
+                                {{ else }} 
+                                    nil
+                                {{ end }} 
+                                
+                            </td>
+                            <td class="text-center">
+
+                            </td>
+                            <td class="text-center">
+
+                            </td>
+                        </tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

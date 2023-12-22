@@ -1,0 +1,79 @@
+<div class="row mb-2"> 
+	{{range .Data}} 
+	<div class="col-4 mb-3">
+		<div class="card"> 
+			<div class="card-body"> 
+                <div class="row d-flex">  
+					<div class="col-4">
+						<div class="bg-gradient-white w-45px h-45px rounded-3 d-flex align-items-center justify-content-center"> 
+							<img src="{{ .Logo }}" alt="" class="ms-100 mh-100">
+						</div>
+					</div>  
+					<div class="col-8"> 
+                        <br/>
+						<a  href="/Leagues/notstarted/{{ .Leagueapi_id }}/{{ .Season }}" 
+							class=" ">   
+							{{ .Name }} - 
+							{{ .Season }}
+						</a>  
+					</div> 
+				</div>  
+			</div>   
+		</div>
+	</div>
+	{{end}}
+</div>
+
+
+<div id="datatable" class="mb-5">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">
+                    Data Pattern
+                </div>
+                <div class="col-6 text-end"> 
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div>
+                <table id="datatableDefault" class="table  ">
+                    <thead class=" ">
+                        <tr>                            
+                            <th class="text-center">Leagueapi</th>   
+                            <th class="text-center">Pre</th>                                  
+                            <th class="text-center">End</th>               
+                            <th class="text-center" width="10%">Counter</th>     
+                        </tr> 
+                    </thead>
+                    <tbody>
+
+                        {{ range .DataResponse }}
+                            <tr> 
+                                <td class="text-center">  
+                                    {{ .LeagueapiID }}  
+                                </td> 
+                                <td class="text-center">  
+                                    {{ .PreResponse }}  
+                                </td> 
+                                <td class="text-center">  
+                                    {{ .EndResponse }}  
+                                </td> 
+                                <td class="text-center"> 
+                                    {{ .Counter }} 
+                                </td>  
+                                <td class="text-center"> 
+                                    <a href="/Pattern/ResponseLeague/{{ .LeagueapiID }}/{{ .PreResponse }}/{{ .EndResponse }}">
+                                        View
+                                    </a>
+                                </td>  
+                            </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+ 

@@ -1,0 +1,249 @@
+<div class="row mb-2">
+    {{range .Data}}  
+    
+    <div class="col-12 mb-3">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-2">
+                        <abbr class="initialism">
+                            {{ .Tanggal }}
+                            {{ .Jam }}
+                        </abbr>
+                    </div>
+                    <div class="col-2">   
+                        <i class="flag-icon flag-icon-{{ .LeagueTeam.CountryTeam.Code }} "
+                            title="{{ .LeagueTeam.CountryTeam.Code }}"
+                            id="{{ .LeagueTeam.CountryTeam.Code }}"></i>
+                        {{ .LeagueTeam.CountryName }}
+                    </div>
+                    <div class="col-4">  
+                        <a href="/Leagues/Notstarted/{{ .LeagueTeam.LeagueAPIID }}/{{ .Season }}" class="p-2 rounded ">
+                            #{{ .LeagueTeam.LeagueAPIID }} 
+                            {{ .LeagueTeam.Name }} - {{ .Season }}
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <span class="badge bg-gray-800 ">
+                            {{ .Round }}
+                        </span>
+                    </div>
+                    <div class="col-1">
+                        <span class="badge bg-gray-900  ">
+                            {{ .FixtureAPIID }}
+                        </span>
+                    </div>
+                    <div class="col-1">
+                        <span class="badge bg-success   ">
+                            Bet365
+                        </span>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-4 text-center"> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row d-flex justify-content-center mb-4">  
+                    <div class="col-1">
+                        <div class="bg-gradient-white w-45px h-45px rounded-3 d-flex align-items-center justify-content-center">
+                            <img src="{{ .HomeTeam.Logo }}" alt="" class="ms-100 mh-100">
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <br/>
+                        <a
+                            href="/Teams/{{ .HomeTeam.TeamAPIID }}"
+                            target="_blank"> 
+                            {{ .HomeTeam.Name }}
+                        </a> 
+                        
+                    </div>
+
+                    <div class="col-2 text-center">
+                        <br/>  
+                        {{template "components/fixture_status" .}}
+                    </div>
+    
+                    <div class="col-2 text-end">
+                        <br/>
+                        <a
+                            href="/Teams/{{ .AwayTeam.TeamAPIID }}"
+                            target="_blank">  
+                            {{ .AwayTeam.Name }}
+                        </a> 
+                    </div>
+    
+                    <div class="col-1 d-flex justify-content-end">
+                        <div class="bg-gradient-white w-45px h-45px rounded-3 d-flex justify-content-end">
+                            <img src="{{ .AwayTeam.Logo }}" alt="" class="ms-100 mh-100">
+                        </div>
+                    </div>
+
+                </div> 
+                
+                <div class="row d-flex justify-content-center mb-4">
+                    <div class="col-3 text-center">
+                        {{ .PreAvgGoalsHome }} 
+                        <br/>
+
+                        {{ with .OddTeam }} 
+                            <span class="badge bg-gray-900"> 
+                                {{ .PreAhPattern }}
+                            </span>
+                            <br/>
+                            <span class="badge bg-gray-900"> 
+                                {{ .PreGouPattern }}
+                            </span> 
+                        {{ end }}
+                    </div>
+                    <div class="col-2 text-center">
+                        <span class="badge bg-gray-700"> 
+                            Goals
+                        </span>
+                        <br/>
+                        {{ .PreAvgHandicap }}
+                        <br/>
+                        {{ .PreAvgOverunder }}
+                    </div>
+                    <div class="col-3 text-center">
+                        {{ .PreAvgGoalsAway }}
+                        <br/>
+
+                        {{ with .OddTeam }} 
+                            <span class="badge bg-gray-800"> 
+                                {{ .EndAhPattern }}
+                            </span>
+                            <br/>
+                            <span class="badge bg-gray-800"> 
+                                {{ .EndGouPattern }}
+                            </span> 
+                        {{ end }}
+                    </div>
+                </div> 
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-3 text-center">
+                        <span class="badge bg-gray-700"> 
+                            Total Shots
+                        </span>
+                    </div>
+                    <div class="col-3 text-center">
+                        <span class="badge bg-gray-700"> 
+                            Shots on Target
+                        </span>
+                    </div>
+                    <div class="col-3 text-center">
+                        <span class="badge bg-gray-700"> 
+                            Match Fouls
+                        </span>
+                    </div>
+                    <div class="col-3 text-center">
+                        <span class="badge bg-gray-700"> 
+                            Offsides
+                        </span>
+                    </div>
+                </div> 
+            </div>
+            <div class="card-footer text-center">  
+                     
+ 
+
+                
+                <div class="row d-flex justify-content-end">
+                    <div class="col-1 text-center"> 
+                        {{ .OtherPattern }}
+                    </div>  
+
+                    {{ if gt .TotalPrepre "0" }} 
+                        <div class="col-2 text-center"> 
+                            <a
+                                href="/PatternFrom/PrePre/{{ .LeagueapiID }}/{{ .Season }}/{{ .FixtureAPIID }}"
+                                target="_blank"
+                                class=" ">
+                                Pre Pre - {{ .TotalPrepre }}
+                            </a>
+                        </div>
+                    {{ end }}  
+                    {{ if gt .TotalPrepreCountry "0" }} 
+                        <div class="col-2 text-center">
+                            <a
+                                href="/PatternFromCountry/PrePre/{{ .LeagueapiID }}/{{ .Season }}/{{ .FixtureAPIID }}"
+                                target="_blank"
+                                class=" ">
+                                Pre Pre Country - {{ .TotalPrepreCountry }}
+                            </a>
+                        </div>
+                    {{ end }}  
+                    {{ if gt .TotalPrepreWorld "0" }} 
+                        <div class="col-2 text-center"> 
+                            <a
+                                href="/PatternFromWorld/PrePre/{{ .LeagueapiID }}/{{ .Season }}/{{ .FixtureAPIID }}"
+                                target="_blank"
+                                class=" ">
+                                Pre Pre World - {{ .TotalPrepreWorld }}
+                            </a>
+                        </div>
+                    {{ end }}   
+                    
+                    
+                    {{ if gt .TotalPreend "0" }} 
+                        <div class="col-2 text-center"> 
+                            <a
+                                href="/PatternFrom/PreEnd/{{ .LeagueapiID }}/{{ .Season }}/{{ .FixtureAPIID }}"
+                                target="_blank"
+                                class=" ">
+                                Pre End - {{ .TotalPreend }}
+                            </a>
+                        </div>
+                    {{ end }}  
+                    {{ if gt .TotalPreendCountry "0" }} 
+                        <div class="col-2 text-center">
+                            <a
+                                href="/PatternFromCountry/PreEnd/{{ .LeagueapiID }}/{{ .Season }}/{{ .FixtureAPIID }}"
+                                target="_blank"
+                                class=" ">
+                                Pre End Country - {{ .TotalPreendCountry }}
+                            </a>
+                        </div>
+                    {{ end }}  
+                    {{ if gt .TotalPreendWorld "0" }} 
+                        <div class="col-2 text-center"> 
+                            <a
+                                href="/PatternFromWorld/PreEnd/{{ .LeagueapiID }}/{{ .Season }}/{{ .FixtureAPIID }}"
+                                target="_blank"
+                                class=" ">
+                                Pre End World - {{ .TotalPreendWorld }}
+                            </a>
+                        </div>
+                    {{ end }}   
+
+                    <div class="col-1 text-center"> 
+                        {{ if eq .SetOne "1" }} 
+                            Ready
+                        {{ else }}  
+                            <a
+                                href="/Fixtures/SetOne/{{ .ID }}"
+                                target="_blank"
+                                class=" ">
+                                One
+                            </a>
+                        {{ end }}  
+                    </div>
+                    
+                    <div class="col-1 text-center">
+                        <a
+                            href="/Fixtures/Information/{{ .LeagueapiID }}/{{ .Season }}/{{ .FixtureAPIID }}"
+                            target="_blank"
+                            class=" ">
+                            View
+                        </a>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div> 
+    {{end}}
+</div>

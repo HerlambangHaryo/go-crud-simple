@@ -1,0 +1,916 @@
+{{template "includes/sub_menu/fixtures" .}}
+ 
+{{ range .Data }} 
+
+<div class="row d-flex justify-content-center mt-3">
+    <div class="col-5 text-center text-yellow">
+        <small>
+            <abbr class="initialism">
+                Match
+            </abbr>
+            <br />
+            <abbr class="initialism">
+                -
+            </abbr>
+        </small>
+    </div>
+</div>
+ 
+<div class="row d-flex justify-content-center mt-3">   
+    <div class="col-4 text-center">
+        <small>
+            <abbr class="initialism">
+                Match Winner 
+            </abbr>
+        </small>
+
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.PreMatchWinnerHome }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw
+                <br/>
+                {{ .OddTeam.PreMatchWinnerDraw }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.PreMatchWinnerAway }}
+            </a>
+        </div>
+        <br/>
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.EndMatchWinnerHome }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw
+                <br/>
+                {{ .OddTeam.EndMatchWinnerDraw }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.EndMatchWinnerAway }}
+            </a>
+        </div>
+    </div>
+
+    <div class="col-2 text-center">
+        <small>
+            <abbr class="initialism">
+                Home/Away
+            </abbr>
+        </small>
+
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.PreHomeAwayHome }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.PreHomeAwayAway }}
+            </a>
+        </div>
+        
+        <br/>
+        
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.EndHomeAwayHome }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.EndHomeAwayAway }}
+            </a>
+        </div>
+    </div>
+
+    <div class="col-4 text-center">
+        <small>
+            <abbr class="initialism">
+                Double Chance
+            </abbr>
+        </small>
+
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/Draw
+                <br/>
+                {{ .OddTeam.PreDoubleChanceHomeDraw }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/Away
+                <br/>
+                {{ .OddTeam.PreDoubleChanceHomeAway }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw/Away
+                <br/>
+                {{ .OddTeam.PreDoubleChanceDrawAway }}
+            </a>
+        </div>
+        
+        <br/>
+        
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/Draw
+                <br/>
+                {{ .OddTeam.EndDoubleChanceHomeDraw }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/Away
+                <br/>
+                {{ .OddTeam.EndDoubleChanceHomeAway }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw/Away
+                <br/>
+                {{ .OddTeam.EndDoubleChanceDrawAway }}
+            </a>
+        </div>
+    </div>
+</div> 
+
+<div class="row d-flex justify-content-center mt-3">
+    <div class="col-5 text-center text-yellow">
+        <small>
+            <abbr class="initialism">
+                Goal
+            </abbr>
+            <br />
+            <abbr class="initialism">
+                -
+            </abbr>
+        </small>
+    </div>
+</div>
+ 
+<div class="row d-flex justify-content-center mt-3">   
+    <div class="col-4 text-center">
+         
+    </div>
+
+    <div class="col-2 text-center">
+        <small>
+            <abbr class="initialism">
+                BTTS
+            </abbr>
+        </small>  
+
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Yes
+                <br/>
+                {{ .OddTeam.PreBothTeamsScoreYes }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                No
+                <br/>
+                {{ .OddTeam.PreBothTeamsScoreNo }}
+            </a>
+        </div>
+        
+        <br/>
+        
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Yes
+                <br/>
+                {{ .OddTeam.EndBothTeamsScoreYes }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                No
+                <br/>
+                {{ .OddTeam.EndBothTeamsScoreNo }}
+            </a>
+        </div>
+
+  
+    </div>
+
+    <div class="col-4 text-center">
+        <small>
+            <abbr class="initialism">
+                Double Chance
+            </abbr>
+        </small> 
+    </div>
+</div> 
+ 
+<div class="row d-flex justify-content-center mt-3">   
+    <div class="col-3 text-center">
+        <small>
+            <abbr class="initialism">
+                CLEAN SHEET - HOME
+            </abbr>
+        </small> 
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Yes
+                <br/>
+                {{ .OddTeam.PreCleanSheetHomeYes }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                No
+                <br/>
+                {{ .OddTeam.PreCleanSheetHomeNo }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Yes
+                <br/>
+                {{ .OddTeam.EndCleanSheetHomeYes }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                No
+                <br/>
+                {{ .OddTeam.EndCleanSheetHomeNo }}
+            </a>
+        </div>
+         
+    </div>
+ 
+    <div class="col-3 text-center">
+        <small>
+            <abbr class="initialism">
+                CLEAN SHEET - AWAY
+            </abbr>
+        </small> 
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Yes
+                <br/>
+                {{ .OddTeam.PreCleanSheetAwayYes }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                No
+                <br/>
+                {{ .OddTeam.PreCleanSheetAwayNo }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Yes
+                <br/>
+                {{ .OddTeam.EndCleanSheetAwayYes }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                No
+                <br/>
+                {{ .OddTeam.EndCleanSheetAwayNo }}
+            </a>
+        </div>
+    </div>
+</div> 
+ 
+<div class="row d-flex justify-content-center mt-3">   
+    <div class="col-4 text-center">
+        <small>
+            <abbr class="initialism">
+                RESULT BOTH TEAMS TO SCORE - YES
+            </abbr>
+        </small> 
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/Yes
+                <br/>
+                {{ .OddTeam.PreResultsBothTeamsScoreHomeYes }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw/Yes
+                <br/>
+                {{ .OddTeam.PreResultsBothTeamsScoreDrawYes }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away/Yes
+                <br/>
+                {{ .OddTeam.PreResultsBothTeamsScoreAwayYes }}
+            </a> 
+        </div>
+        
+        <br/>
+        
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/Yes
+                <br/>
+                {{ .OddTeam.EndResultsBothTeamsScoreHomeYes }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw/Yes
+                <br/>
+                {{ .OddTeam.EndResultsBothTeamsScoreDrawYes }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away/Yes
+                <br/>
+                {{ .OddTeam.EndResultsBothTeamsScoreAwayYes }}
+            </a> 
+        </div>
+         
+    </div>
+ 
+    <div class="col-4 text-center">
+        <small>
+            <abbr class="initialism">
+                RESULT BOTH TEAMS TO SCORE - No
+            </abbr>
+        </small> 
+        
+        <br/>
+ 
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/No
+                <br/>
+                {{ .OddTeam.PreResultsBothTeamsScoreHomeNo }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw/No
+                <br/>
+                {{ .OddTeam.PreResultsBothTeamsScoreDrawNo }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away/No
+                <br/>
+                {{ .OddTeam.PreResultsBothTeamsScoreAwayNo }}
+            </a>
+        </div>
+        
+        <br/>
+        
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/No
+                <br/>
+                {{ .OddTeam.EndResultsBothTeamsScoreHomeNo }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw/No
+                <br/>
+                {{ .OddTeam.EndResultsBothTeamsScoreDrawNo }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away/No
+                <br/>
+                {{ .OddTeam.EndResultsBothTeamsScoreAwayNo }}
+            </a>
+        </div>
+         
+    </div>
+</div> 
+
+<div class="row d-flex justify-content-center mt-3">   
+    <div class="col-6 text-center">
+        <small>
+            <abbr class="initialism">
+                RESULT/TOTAL GOALS - U25
+            </abbr>
+        </small>  
+        
+        <br/>
+ 
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/Under 2.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsHomeUnder25 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw/Under 2.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsDrawUnder25 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away/Under 2.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsAwayUnder25 }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/Under 2.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsHomeUnder25 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw/Under 2.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsDrawUnder25 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away/Under 2.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsAwayUnder25 }}
+            </a>
+        </div>
+         
+    </div>
+ 
+    <div class="col-6 text-center">
+        <small>
+            <abbr class="initialism">
+                RESULT/TOTAL GOALS - O25
+            </abbr>
+        </small>  
+        
+        <br/>
+ 
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/Over 2.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsHomeOver25 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw/Over 2.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsDrawOver25 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away/Over 2.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsAwayOver25 }}
+            </a> 
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/Over 2.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsHomeOver25 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw/Over 2.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsDrawOver25 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away/Over 2.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsAwayOver25 }}
+            </a> 
+        </div>
+         
+    </div> 
+</div> 
+    
+<div class="row d-flex justify-content-center mt-3">   
+    <div class="col-6 text-center">
+        <small>
+            <abbr class="initialism">
+                RESULT/TOTAL GOALS - U35
+            </abbr>
+        </small>  
+
+        <br/>
+ 
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/Under 3.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsHomeUnder35 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw/Under 3.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsDrawUnder35 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away/Under 3.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsAwayUnder35 }}
+            </a> 
+        </div>
+        
+        <br/>
+        
+        <div class="btn-group mt-2"> 
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/Under 3.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsHomeUnder35 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw/Under 3.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsDrawUnder35 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away/Under 3.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsAwayUnder35 }}
+            </a> 
+        </div>
+         
+    </div>
+ 
+    <div class="col-6 text-center">
+        <small>
+            <abbr class="initialism">
+                RESULT/TOTAL GOALS - O35
+            </abbr>
+        </small>  
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home/Over 3.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsHomeOver35 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw/Over 3.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsDrawOver35 }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away/Over 3.5
+                <br/>
+                {{ .OddTeam.PreResultTotalGoalsAwayOver35 }}
+            </a> 
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home/Over 3.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsHomeOver35 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw/Over 3.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsDrawOver35 }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away/Over 3.5
+                <br/>
+                {{ .OddTeam.EndResultTotalGoalsAwayOver35 }}
+            </a> 
+        </div>
+         
+    </div>
+</div> 
+ 
+<div class="row d-flex justify-content-center mt-3">
+    <div class="col-5 text-center text-yellow">
+        <small>
+            <abbr class="initialism">
+                Goal
+            </abbr>
+            <br />
+            <abbr class="initialism">
+                -
+            </abbr>
+        </small>
+    </div>
+</div>
+
+<div class="row d-flex justify-content-center mt-3">    
+    <div class="col-3 text-center">
+        <small>
+            <abbr class="initialism">
+                WIN TO NIL
+            </abbr>
+        </small>   
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.PreWinToNilHome }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.PreWinToNilAway }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.EndWinToNilHome }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.EndWinToNilAway }}
+            </a>
+        </div>
+         
+    </div> 
+    <div class="col-3 text-center">
+        <small>
+            <abbr class="initialism">
+                TO WIN EITHER HALF
+            </abbr>
+        </small>   
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.PreToWinEitherHalfHome }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.PreToWinEitherHalfAway }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.EndToWinEitherHalfHome }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.EndToWinEitherHalfAway }}
+            </a>
+        </div>
+         
+    </div> 
+    <div class="col-3 text-center">
+        <small>
+            <abbr class="initialism">
+                WIN BOTH HALVES
+            </abbr>
+        </small> 
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.PreWinBothHalvesHome }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.PreWinBothHalvesAway }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.EndWinBothHalvesHome }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.EndWinBothHalvesAway }}
+            </a>
+        </div>  
+         
+    </div> 
+    <div class="col-3 text-center">
+        <small>
+            <abbr class="initialism">
+                ODD/EVEN
+            </abbr>
+        </small>  
+
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Odd
+                <br/>
+                {{ .OddTeam.PreOddEvenOdd }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Even
+                <br/>
+                {{ .OddTeam.PreOddEvenEven }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Odd
+                <br/>
+                {{ .OddTeam.EndOddEvenOdd }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Even
+                <br/>
+                {{ .OddTeam.EndOddEvenEven }}
+            </a>
+        </div>
+    </div>
+</div> 
+ 
+<div class="row d-flex justify-content-center mt-3">
+    <div class="col-6 text-center text-yellow">
+        <small>
+            <abbr class="initialism">
+                FIRST HALF
+            </abbr>
+            <br />
+            <abbr class="initialism">
+                -
+            </abbr>
+        </small>
+    </div>
+    <div class="col-6 text-center text-yellow">
+        <small>
+            <abbr class="initialism">
+                SECOND HALF
+            </abbr>
+            <br />
+            <abbr class="initialism">
+                -
+            </abbr>
+        </small>
+    </div>
+</div>
+ 
+<div class="row d-flex justify-content-center mt-3">    
+    <div class="col-6 text-center">
+        <small>
+            <abbr class="initialism">
+                First Half Winner
+            </abbr>
+        </small>    
+        
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.PreFirstHalfWinnerHome }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw
+                <br/>
+                {{ .OddTeam.PreFirstHalfWinnerDraw }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.PreFirstHalfWinnerAway }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.EndFirstHalfWinnerHome }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw
+                <br/>
+                {{ .OddTeam.EndFirstHalfWinnerDraw }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.EndFirstHalfWinnerAway }}
+            </a>
+        </div>
+    </div> 
+    <div class="col-6 text-center">
+        <small>
+            <abbr class="initialism">
+                Second Half Winner
+            </abbr>
+        </small>   
+        <br/>
+ 
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.PreSecondHalfWinnerHome }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Draw
+                <br/>
+                {{ .OddTeam.PreSecondHalfWinnerDraw }}
+            </a>
+            <a class="btn bg-gray-700 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.PreSecondHalfWinnerAway }}
+            </a>
+        </div>
+         
+        <br/>
+         
+        <div class="btn-group mt-2">
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Home
+                <br/>
+                {{ .OddTeam.EndSecondHalfWinnerHome }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Draw
+                <br/>
+                {{ .OddTeam.EndSecondHalfWinnerDraw }}
+            </a>
+            <a class="btn bg-gray-800 btn-sm text-white">
+                Away
+                <br/>
+                {{ .OddTeam.EndSecondHalfWinnerAway }}
+            </a>
+        </div>
+    </div>  
+</div> 
+
+
+ 
+<div class="row d-flex justify-content-center mt-3">
+    <div class="col-6 text-center text-yellow">
+        <small>
+            <abbr class="initialism">
+                CORNERS
+            </abbr>
+            <br />
+            <abbr class="initialism">
+                -
+            </abbr>
+        </small>
+    </div>
+    <div class="col-6 text-center text-yellow">
+        <small>
+            <abbr class="initialism">
+                CARDS
+            </abbr>
+            <br />
+            <abbr class="initialism">
+                -
+            </abbr>
+        </small>
+    </div>
+</div>
+ 
+{{ end }} 

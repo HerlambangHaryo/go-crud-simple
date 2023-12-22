@@ -1,0 +1,73 @@
+<div class="row mb-4">
+    <div class="col-12 text-center">  
+        {{ range .Data }} 
+        <div class="row d-flex justify-content-center">  
+            <div class="col-1">
+                <div class="bg-gradient-white w-45px h-45px rounded-3 d-flex align-items-center justify-content-center">
+                    <img src="{{ .Logo }}" alt="" class="ms-100 mh-100">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <br/>
+                <a
+                    href="/Teams/{{ .TeamAPIID }}"> 
+                    {{ .Name }} 
+                </a>   
+            </div>
+ 
+            <div class="col-2">
+                <br/> 
+                {{ .Code }}  
+            </div>
+ 
+            <div class="col-2">
+                <br/> 
+                {{ .Country }}  
+            </div>
+ 
+            <div class="col-2">
+                <br/> 
+                {{ .Founded }}  
+            </div>
+ 
+            <div class="col-2">
+                <br/> 
+                {{ .VenueAPIID }}  
+            </div>
+        </div> 
+        {{ end }} 
+    </div>
+</div>
+<div class="row mb-2"> 
+	{{range .DataCoach}} 
+	<div class="col-4 mb-3">
+		<div class="card">
+			<div class="card-header"> 
+				card header
+			</div>  
+			<div class="card-body"> 
+                <div class="row d-flex">  
+					<div class="col-4">
+						<div class="bg-gradient-white w-45px h-45px rounded-3 d-flex align-items-center justify-content-center"> 
+							<img src="{{ .Image }}" alt="" class="ms-100 mh-100">
+						</div>
+					</div>  
+					<div class="col-8"> 
+                        <br/>
+						<a  href="/Teams/Stats/{{ .TeamAPIID }}/{{ .CoachAPIID }}" 
+							class=" ">   
+							{{ .Name }} {{ .TeamAPIID }}
+						</a>  
+					</div> 
+				</div>  
+			</div>  
+			<div class="card-footer"> 
+				card header
+			</div>  
+		</div>
+	</div>
+	{{end}}
+</div>
+ 
+ 

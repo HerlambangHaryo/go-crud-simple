@@ -4,6 +4,7 @@
     class="dark-mode">
     <head>  
         {{template "templates/studiov30/partials/head" .}}
+        {{template "templates/studiov30/partials/head_datatable" .}}
     </head> 
 	<body class="dark-mode theme-yellow"> 
         <!-- BEGIN #app -->
@@ -22,6 +23,14 @@
              
         </div>
         <!-- END #app -->
+		<script>
+			function incrementValue() {
+			  var element = document.getElementById('counter');
+			  var value = parseInt(element.innerHTML);
+			  value++;
+			  element.innerHTML = value;
+			}
+		</script>
 		{{template "templates/studiov30/partials/script" .}}  
         
 		{{template "templates/studiov30/partials/script_datatable" .}}  

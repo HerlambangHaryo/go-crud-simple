@@ -1,0 +1,49 @@
+{{template "includes/sub_menu/leagues" .}}
+
+<div id="datatable" class="mb-5">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">
+                    Data Row
+                </div>
+                <div class="col-6 text-end"> 
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div>
+                <table id="datatableDefault" class="table  ">
+                    <thead class=" ">
+                        <tr>                            
+                            <th class="text-center">Pre</th>                                  
+                            <th class="text-center">End</th>               
+                            <th class="text-center" width="10%">Counter</th>     
+                        </tr> 
+                    </thead>
+                    <tbody>
+
+                        {{ range .Data }}
+                            <tr> 
+                                <td class="text-center">  
+                                    {{ .PreResponse }}  
+                                </td> 
+                                <td class="text-center">  
+                                    {{ .EndResponse }}  
+                                </td> 
+                                <td class="text-center"> 
+                                    {{ .Counter }} 
+                                </td>  
+                                <td class="text-center"> 
+                                    <a href="/Pattern/ResponseLeague/{{ .LeagueapiID }}/{{ .PreResponse }}/{{ .EndResponse }}">
+                                        View
+                                    </a>
+                                </td>  
+                            </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

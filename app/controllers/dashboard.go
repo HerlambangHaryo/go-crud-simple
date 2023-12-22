@@ -1,13 +1,30 @@
 // book.go
 package controllers
 
-import (
-	"github.com/gofiber/fiber/v2" 
-) 
-
-// Get all dashboard
-func GetDashboard(c *fiber.Ctx) error { 
-    return c.Render("contents/dashboard/index", fiber.Map{
-        "dashboard": "",
-    },"templates/studiov30/pageblank")
-}
+    import (
+        "github.com/gofiber/fiber/v2" 
+		"github.com/HerlambangHaryo/go-crud-simple/app/models" 
+    ) 
+  
+    func GetDashboard(c *fiber.Ctx) error { 
+        // --------------------------------------------------------------  
+			MFO := new(models.FootballOdd)   
+        // --------------------------------------------------------------    
+            CountPre, err := MFO.GetPrePatternNonPatternPercentage() 
+            if err != nil {
+                return c.Status(500).SendString(err.Error())
+            } 
+        // --------------------------------------------------------------    
+            CountOtherPre, err := MFO.GetOtherPrePatternNonPatternPercentage() 
+            if err != nil {
+                return c.Status(500).SendString(err.Error())
+            }   
+        // --------------------------------------------------------------
+            return c.Render("contents/dashboard/GetDashboard", fiber.Map{
+                "Title": "Dashboard", 
+				"Content": "Dashboard",
+                "CountPre": CountPre, 
+                "CountOtherPre": CountOtherPre, 
+            },"templates/studiov30/pageblank")
+        // --------------------------------------------------------------
+    }

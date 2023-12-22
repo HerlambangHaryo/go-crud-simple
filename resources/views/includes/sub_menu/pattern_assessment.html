@@ -1,0 +1,2256 @@
+{{ range .Data3 }}
+    
+{{ if gt .MatchWinnerHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/MatchWinnerHomePerc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home: {{ .MatchWinnerHomePerc }}
+</a>
+{{ else if gt .MatchWinnerDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/MatchWinnerDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       Draw: {{ .MatchWinnerDrawPerc }}
+</a>
+{{ else if gt .MatchWinnerAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/MatchWinnerAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       Away: {{ .MatchWinnerAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HomeawayHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HomeawayHomePerc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       HomeawayHome: {{ .HomeawayHomePerc }}
+</a>
+{{ else if gt .HomeawayAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HomeawayAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HomeawayAway: {{ .HomeawayAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .SecondHalfWinnerHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfWinnerHomePerc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       SecondHalfWinnerHome: {{ .SecondHalfWinnerHomePerc }}
+</a>
+{{ else if gt .SecondHalfWinnerDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfWinnerDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfWinnerDraw: {{ .SecondHalfWinnerDrawPerc }}
+</a>
+{{ else if gt .SecondHalfWinnerAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfWinnerAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfWinnerAway: {{ .SecondHalfWinnerAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapHomeMin65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin65Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -65: {{ .AsianHandicapHomeMin65Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin6Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin6Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -6: {{ .AsianHandicapHomeMin6Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin55Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -55: {{ .AsianHandicapHomeMin55Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin5Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin5Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -5: {{ .AsianHandicapHomeMin5Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin45Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -45: {{ .AsianHandicapHomeMin45Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin4Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin4Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -4: {{ .AsianHandicapHomeMin4Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin35Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -35: {{ .AsianHandicapHomeMin35Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin3Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -3: {{ .AsianHandicapHomeMin3Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin25Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -25: {{ .AsianHandicapHomeMin25Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin2Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -2: {{ .AsianHandicapHomeMin2Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin15Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -15: {{ .AsianHandicapHomeMin15Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin1Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -1: {{ .AsianHandicapHomeMin1Perc }}
+</a>
+{{ else if gt .AsianHandicapHomeMin05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomeMin05Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home -05: {{ .AsianHandicapHomeMin05Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus0Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +0: {{ .AsianHandicapHomePlus0Perc }}
+</a>
+{{ end }}
+
+
+
+
+{{ if gt .AsianHandicapAwayMin65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin65Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +65: {{ .AsianHandicapAwayMin65Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin6Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin6Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +6: {{ .AsianHandicapAwayMin6Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin55Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +55: {{ .AsianHandicapAwayMin55Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin5Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin5Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +5: {{ .AsianHandicapAwayMin5Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin45Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +45: {{ .AsianHandicapAwayMin45Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin4Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin4Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +4: {{ .AsianHandicapAwayMin4Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin35Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +35: {{ .AsianHandicapAwayMin35Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin3Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +3: {{ .AsianHandicapAwayMin3Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin25Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +25: {{ .AsianHandicapAwayMin25Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin2Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +2: {{ .AsianHandicapAwayMin2Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin15Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +15: {{ .AsianHandicapAwayMin15Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin1Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +1: {{ .AsianHandicapAwayMin1Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayMin05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayMin05Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away +05: {{ .AsianHandicapAwayMin05Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus0Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -0: {{ .AsianHandicapAwayPlus0Perc }}
+</a>
+{{ end }}
+
+
+
+
+<!-- AH + -->
+{{ if gt .AsianHandicapHomePlus05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus05Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +05: {{ .AsianHandicapHomePlus05Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus1Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +1: {{ .AsianHandicapHomePlus1Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus15Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +15: {{ .AsianHandicapHomePlus15Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus2Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +2: {{ .AsianHandicapHomePlus2Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus25Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +25: {{ .AsianHandicapHomePlus25Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus3Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +3: {{ .AsianHandicapHomePlus3Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus35Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +35: {{ .AsianHandicapHomePlus35Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus4Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus4Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +4: {{ .AsianHandicapHomePlus4Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus45Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +45: {{ .AsianHandicapHomePlus45Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus5Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus5Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +5: {{ .AsianHandicapHomePlus5Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus55Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +55: {{ .AsianHandicapHomePlus55Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus6Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus6Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +6: {{ .AsianHandicapHomePlus6Perc }}
+</a>
+{{ else if gt .AsianHandicapHomePlus65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapHomePlus65Perc"
+    target="_blank"
+    class="badge bg-primary ms-1 me-1 mt-1 mb-1">
+       Home +65: {{ .AsianHandicapHomePlus65Perc }}
+</a>
+{{ end }}
+<!-- AH + -->
+
+
+
+
+
+
+{{ if gt .AsianHandicapAwayPlus05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus05Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -05: {{ .AsianHandicapAwayPlus05Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus1Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -1: {{ .AsianHandicapAwayPlus1Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus15Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -15: {{ .AsianHandicapAwayPlus15Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus2Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -2: {{ .AsianHandicapAwayPlus2Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus25Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -25: {{ .AsianHandicapAwayPlus25Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus3Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -3: {{ .AsianHandicapAwayPlus3Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus35Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -35: {{ .AsianHandicapAwayPlus35Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus4Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus4Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -4: {{ .AsianHandicapAwayPlus4Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus45Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -45: {{ .AsianHandicapAwayPlus45Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus5Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus5Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -5: {{ .AsianHandicapAwayPlus5Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus55Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -55: {{ .AsianHandicapAwayPlus55Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus6Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus6Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -6: {{ .AsianHandicapAwayPlus6Perc }}
+</a>
+{{ else if gt .AsianHandicapAwayPlus65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapAwayPlus65Perc"
+    target="_blank"
+    class="badge bg-warning ms-1 me-1 mt-1 mb-1">
+       Away -65: {{ .AsianHandicapAwayPlus65Perc }}
+</a>
+{{ end }}
+
+
+
+
+
+
+<!-- UNDER -->
+{{ if gt .GoalsOverunderUnder05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder05Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u05: {{ .GoalsOverunderUnder05Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder10Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder10Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u10: {{ .GoalsOverunderUnder10Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder15Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u15: {{ .GoalsOverunderUnder15Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder20Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder20Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u20: {{ .GoalsOverunderUnder20Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder25Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u25: {{ .GoalsOverunderUnder25Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder30Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder30Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u30: {{ .GoalsOverunderUnder30Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder35Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u35: {{ .GoalsOverunderUnder35Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder40Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder40Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u40: {{ .GoalsOverunderUnder40Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder45Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u45: {{ .GoalsOverunderUnder45Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder50Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder50Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u50: {{ .GoalsOverunderUnder50Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder55Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u55: {{ .GoalsOverunderUnder55Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder60Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder60Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u60: {{ .GoalsOverunderUnder60Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder65Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u65: {{ .GoalsOverunderUnder65Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder70Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder70Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u70: {{ .GoalsOverunderUnder70Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder75Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder75Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u75: {{ .GoalsOverunderUnder75Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder85Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder85Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u85: {{ .GoalsOverunderUnder85Perc }}
+</a>
+{{ else if gt .GoalsOverunderUnder95Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderUnder95Perc"
+    target="_blank"
+    class="badge bg-danger ms-1 me-1 mt-1 mb-1">
+       u95: {{ .GoalsOverunderUnder95Perc }}
+</a> 
+{{ end }}
+<!-- UNDER -->
+
+<!-- OVER -->
+{{ if gt .GoalsOverunderOver95Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver95Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o95: {{ .GoalsOverunderOver95Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver85Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver85Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o85: {{ .GoalsOverunderOver85Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver75Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver75Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o75: {{ .GoalsOverunderOver75Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver70Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver70Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o70: {{ .GoalsOverunderOver70Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver65Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o65: {{ .GoalsOverunderOver65Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver60Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver60Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o60: {{ .GoalsOverunderOver60Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver55Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o55: {{ .GoalsOverunderOver55Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver50Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver50Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o50: {{ .GoalsOverunderOver50Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver45Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o45: {{ .GoalsOverunderOver45Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver40Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver40Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o40: {{ .GoalsOverunderOver40Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver35Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o35: {{ .GoalsOverunderOver35Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver30Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver30Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o30: {{ .GoalsOverunderOver30Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver25Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o25: {{ .GoalsOverunderOver25Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver20Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver20Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o20: {{ .GoalsOverunderOver20Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver15Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o15: {{ .GoalsOverunderOver15Perc }} {{ .GoalsOverunderOver15Odd }}
+</a>
+{{ else if gt .GoalsOverunderOver10Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver10Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o10: {{ .GoalsOverunderOver10Perc }}
+</a>
+{{ else if gt .GoalsOverunderOver05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderOver05Perc"
+    target="_blank"
+    class="badge bg-success ms-1 me-1 mt-1 mb-1">
+       o05: {{ .GoalsOverunderOver05Perc }}
+</a>
+{{ end }}  
+<!-- OVER -->
+
+
+
+
+
+
+
+
+
+<!-- OVER FirstHalf -->
+{{ if gt .GoalsOverunderFirstHalfOver05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfOver05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st o05: {{ .GoalsOverunderFirstHalfOver05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfUnder05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfUnder05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st u05: {{ .GoalsOverunderFirstHalfUnder05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfOver10Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfOver10Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st o10: {{ .GoalsOverunderFirstHalfOver10Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfUnder10Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfUnder10Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st u10: {{ .GoalsOverunderFirstHalfUnder10Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfOver15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfOver15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st o15: {{ .GoalsOverunderFirstHalfOver15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfUnder15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfUnder15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st u15: {{ .GoalsOverunderFirstHalfUnder15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfOver20Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfOver20Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st o20: {{ .GoalsOverunderFirstHalfOver20Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfUnder20Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfUnder20Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st u20: {{ .GoalsOverunderFirstHalfUnder20Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfOver25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st o25: {{ .GoalsOverunderFirstHalfOver25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfUnder25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st u25: {{ .GoalsOverunderFirstHalfUnder25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfOver30Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfOver30Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st o30: {{ .GoalsOverunderFirstHalfOver30Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfUnder30Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfUnder30Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st u30: {{ .GoalsOverunderFirstHalfUnder30Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfOver35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st o35: {{ .GoalsOverunderFirstHalfOver35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderFirstHalfUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderFirstHalfUnder35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1st u35: {{ .GoalsOverunderFirstHalfUnder35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleHomeHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleHomeHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleHomeHome: {{ .HtftDoubleHomeHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleHomeDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleHomeDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleHomeDraw: {{ .HtftDoubleHomeDrawPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleHomeAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleHomeAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleHomeAway: {{ .HtftDoubleHomeAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleDrawHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleDrawHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleDrawHome: {{ .HtftDoubleDrawHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleDrawDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleDrawDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleDrawDraw: {{ .HtftDoubleDrawDrawPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleDrawAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleDrawAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleDrawAway: {{ .HtftDoubleDrawAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleAwayHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleAwayHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleAwayHome: {{ .HtftDoubleAwayHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleAwayDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleAwayDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleAwayDraw: {{ .HtftDoubleAwayDrawPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HtftDoubleAwayAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HtftDoubleAwayAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HtftDoubleAwayAway: {{ .HtftDoubleAwayAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsScoreYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsScoreYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsScoreYes: {{ .BothTeamsScoreYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsScoreNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsScoreNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsScoreNo: {{ .BothTeamsScoreNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HighestScoringHalfFirstPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HighestScoringHalfFirstPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HighestScoringHalfFirst: {{ .HighestScoringHalfFirstPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HighestScoringHalfDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HighestScoringHalfDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HighestScoringHalfDraw: {{ .HighestScoringHalfDrawPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HighestScoringHalfSecondPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HighestScoringHalfSecondPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HighestScoringHalfSecond: {{ .HighestScoringHalfSecondPerc }}
+</a>
+{{ end }}
+
+
+
+{{ if gt .DoubleChanceHomeDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/DoubleChanceHomeDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       1X: {{ .DoubleChanceHomeDrawPerc }}
+</a>
+{{ else if gt .DoubleChanceHomeAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/DoubleChanceHomeAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       12: {{ .DoubleChanceHomeAwayPerc }}
+</a>
+{{ else if gt .DoubleChanceDrawAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/DoubleChanceDrawAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       2X: {{ .DoubleChanceDrawAwayPerc }}
+</a>
+{{ end }}
+
+
+
+
+{{ if gt .FirstHalfWinnerHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/FirstHalfWinnerHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       FirstHalfWinnerHome: {{ .FirstHalfWinnerHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .FirstHalfWinnerDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/FirstHalfWinnerDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       FirstHalfWinnerDraw: {{ .FirstHalfWinnerDrawPerc }}
+</a>
+{{ end }}
+
+{{ if gt .FirstHalfWinnerAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/FirstHalfWinnerAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       FirstHalfWinnerAway: {{ .FirstHalfWinnerAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeOver15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeOver15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeOver15: {{ .TotalHomeOver15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeUnder15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeUnder15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeUnder15: {{ .TotalHomeUnder15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeOver25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeOver25: {{ .TotalHomeOver25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeUnder25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeUnder25: {{ .TotalHomeUnder25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeOver35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeOver35: {{ .TotalHomeOver35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeUnder35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeUnder35: {{ .TotalHomeUnder35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeOver45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeOver45Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeOver45: {{ .TotalHomeOver45Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeUnder45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeUnder45Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeUnder45: {{ .TotalHomeUnder45Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeOver55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeOver55Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeOver55: {{ .TotalHomeOver55Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeUnder55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeUnder55Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeUnder55: {{ .TotalHomeUnder55Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeOver65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeOver65Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeOver65: {{ .TotalHomeOver65Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalHomeUnder65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalHomeUnder65Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalHomeUnder65: {{ .TotalHomeUnder65Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayOver15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayOver15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayOver15: {{ .TotalAwayOver15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayUnder15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayUnder15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayUnder15: {{ .TotalAwayUnder15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayOver25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayOver25: {{ .TotalAwayOver25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayUnder25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayUnder25: {{ .TotalAwayUnder25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayOver35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayOver35: {{ .TotalAwayOver35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayUnder35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayUnder35: {{ .TotalAwayUnder35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayOver45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayOver45Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayOver45: {{ .TotalAwayOver45Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayUnder45Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayUnder45Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayUnder45: {{ .TotalAwayUnder45Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayOver55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayOver55Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayOver55: {{ .TotalAwayOver55Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayUnder55Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayUnder55Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayUnder55: {{ .TotalAwayUnder55Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayOver65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayOver65Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayOver65: {{ .TotalAwayOver65Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalAwayUnder65Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalAwayUnder65Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalAwayUnder65: {{ .TotalAwayUnder65Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfHomeMin15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfHomeMin15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfHomeMin15: {{ .AsianHandicapFirstHalfHomeMin15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfAwayMin15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfAwayMin15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfAwayMin15: {{ .AsianHandicapFirstHalfAwayMin15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfHomeMin1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfHomeMin1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfHomeMin1: {{ .AsianHandicapFirstHalfHomeMin1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfAwayMin1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfAwayMin1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfAwayMin1: {{ .AsianHandicapFirstHalfAwayMin1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfHomeMin05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfHomeMin05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfHomeMin05: {{ .AsianHandicapFirstHalfHomeMin05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfAwayMin05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfAwayMin05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfAwayMin05: {{ .AsianHandicapFirstHalfAwayMin05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfHomePlus0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfHomePlus0Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfHomePlus0: {{ .AsianHandicapFirstHalfHomePlus0Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfAwayPlus0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfAwayPlus0Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfAwayPlus0: {{ .AsianHandicapFirstHalfAwayPlus0Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfHomePlus05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfHomePlus05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfHomePlus05: {{ .AsianHandicapFirstHalfHomePlus05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfAwayPlus05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfAwayPlus05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfAwayPlus05: {{ .AsianHandicapFirstHalfAwayPlus05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfHomePlus1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfHomePlus1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfHomePlus1: {{ .AsianHandicapFirstHalfHomePlus1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfAwayPlus1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfAwayPlus1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfAwayPlus1: {{ .AsianHandicapFirstHalfAwayPlus1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfHomePlus15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfHomePlus15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfHomePlus15: {{ .AsianHandicapFirstHalfHomePlus15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AsianHandicapFirstHalfAwayPlus15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AsianHandicapFirstHalfAwayPlus15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AsianHandicapFirstHalfAwayPlus15: {{ .AsianHandicapFirstHalfAwayPlus15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .DoubleChanceFirstHalfHomeDrawPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/DoubleChanceFirstHalfHomeDrawPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       DoubleChanceFirstHalfHomeDraw: {{ .DoubleChanceFirstHalfHomeDrawPerc }}
+</a>
+{{ end }}
+
+{{ if gt .DoubleChanceFirstHalfHomeAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/DoubleChanceFirstHalfHomeAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       DoubleChanceFirstHalfHomeAway: {{ .DoubleChanceFirstHalfHomeAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .DoubleChanceFirstHalfDrawAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/DoubleChanceFirstHalfDrawAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       DoubleChanceFirstHalfDrawAway: {{ .DoubleChanceFirstHalfDrawAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .OddevenOddPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/OddevenOddPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       OddevenOdd: {{ .OddevenOddPerc }}
+</a>
+{{ end }}
+
+{{ if gt .OddevenEvenPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/OddevenEvenPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       OddevenEven: {{ .OddevenEvenPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultsBothTeamsScoreHomeYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultsBothTeamsScoreHomeYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultsBothTeamsScoreHomeYes: {{ .ResultsBothTeamsScoreHomeYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultsBothTeamsScoreDrawYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultsBothTeamsScoreDrawYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultsBothTeamsScoreDrawYes: {{ .ResultsBothTeamsScoreDrawYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultsBothTeamsScoreAwayYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultsBothTeamsScoreAwayYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultsBothTeamsScoreAwayYes: {{ .ResultsBothTeamsScoreAwayYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultsBothTeamsScoreHomeNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultsBothTeamsScoreHomeNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultsBothTeamsScoreHomeNo: {{ .ResultsBothTeamsScoreHomeNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultsBothTeamsScoreDrawNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultsBothTeamsScoreDrawNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultsBothTeamsScoreDrawNo: {{ .ResultsBothTeamsScoreDrawNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultsBothTeamsScoreAwayNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultsBothTeamsScoreAwayNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultsBothTeamsScoreAwayNo: {{ .ResultsBothTeamsScoreAwayNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsHomeOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsHomeOver35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsHomeOver35: {{ .ResultTotalGoalsHomeOver35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsDrawOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsDrawOver35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsDrawOver35: {{ .ResultTotalGoalsDrawOver35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsAwayOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsAwayOver35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsAwayOver35: {{ .ResultTotalGoalsAwayOver35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsHomeUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsHomeUnder35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsHomeUnder35: {{ .ResultTotalGoalsHomeUnder35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsDrawUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsDrawUnder35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsDrawUnder35: {{ .ResultTotalGoalsDrawUnder35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsAwayUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsAwayUnder35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsAwayUnder35: {{ .ResultTotalGoalsAwayUnder35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsHomeOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsHomeOver25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsHomeOver25: {{ .ResultTotalGoalsHomeOver25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsDrawOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsDrawOver25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsDrawOver25: {{ .ResultTotalGoalsDrawOver25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsAwayOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsAwayOver25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsAwayOver25: {{ .ResultTotalGoalsAwayOver25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsHomeUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsHomeUnder25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsHomeUnder25: {{ .ResultTotalGoalsHomeUnder25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsDrawUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsDrawUnder25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsDrawUnder25: {{ .ResultTotalGoalsDrawUnder25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ResultTotalGoalsAwayUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ResultTotalGoalsAwayUnder25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ResultTotalGoalsAwayUnder25: {{ .ResultTotalGoalsAwayUnder25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfOver05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfOver05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfOver05: {{ .GoalsOverunderSecondHalfOver05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfUnder05Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfUnder05Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfUnder05: {{ .GoalsOverunderSecondHalfUnder05Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfOver10Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfOver10Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfOver10: {{ .GoalsOverunderSecondHalfOver10Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfUnder10Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfUnder10Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfUnder10: {{ .GoalsOverunderSecondHalfUnder10Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfOver15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfOver15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfOver15: {{ .GoalsOverunderSecondHalfOver15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfUnder15Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfUnder15Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfUnder15: {{ .GoalsOverunderSecondHalfUnder15Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfOver20Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfOver20Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfOver20: {{ .GoalsOverunderSecondHalfOver20Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfUnder20Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfUnder20Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfUnder20: {{ .GoalsOverunderSecondHalfUnder20Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfOver25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfOver25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfOver25: {{ .GoalsOverunderSecondHalfOver25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfUnder25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfUnder25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfUnder25: {{ .GoalsOverunderSecondHalfUnder25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfOver30Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfOver30Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfOver30: {{ .GoalsOverunderSecondHalfOver30Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfUnder30Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfUnder30Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfUnder30: {{ .GoalsOverunderSecondHalfUnder30Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfOver35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfOver35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfOver35: {{ .GoalsOverunderSecondHalfOver35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .GoalsOverunderSecondHalfUnder35Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/GoalsOverunderSecondHalfUnder35Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       GoalsOverunderSecondHalfUnder35: {{ .GoalsOverunderSecondHalfUnder35Perc }}
+</a>
+{{ end }}
+
+{{ if gt .CleanSheetHomeYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/CleanSheetHomeYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       CleanSheetHomeYes: {{ .CleanSheetHomeYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .CleanSheetHomeNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/CleanSheetHomeNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       CleanSheetHomeNo: {{ .CleanSheetHomeNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .CleanSheetAwayYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/CleanSheetAwayYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       CleanSheetAwayYes: {{ .CleanSheetAwayYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .CleanSheetAwayNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/CleanSheetAwayNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       CleanSheetAwayNo: {{ .CleanSheetAwayNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .WinBothHalvesHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/WinBothHalvesHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       WinBothHalvesHome: {{ .WinBothHalvesHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .WinBothHalvesAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/WinBothHalvesAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       WinBothHalvesAway: {{ .WinBothHalvesAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsScoreFirstHalfYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsScoreFirstHalfYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsScoreFirstHalfYes: {{ .BothTeamsScoreFirstHalfYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsScoreFirstHalfNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsScoreFirstHalfNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsScoreFirstHalfNo: {{ .BothTeamsScoreFirstHalfNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsToScoreSecondHalfYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsToScoreSecondHalfYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsToScoreSecondHalfYes: {{ .BothTeamsToScoreSecondHalfYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsToScoreSecondHalfNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsToScoreSecondHalfNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsToScoreSecondHalfNo: {{ .BothTeamsToScoreSecondHalfNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .WinToNilHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/WinToNilHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       WinToNilHome: {{ .WinToNilHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .WinToNilAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/WinToNilAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       WinToNilAway: {{ .WinToNilAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumber0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumber0Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumber0: {{ .ExactGoalsNumber0Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumber1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumber1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumber1: {{ .ExactGoalsNumber1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumber2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumber2Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumber2: {{ .ExactGoalsNumber2Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumber3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumber3Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumber3: {{ .ExactGoalsNumber3Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumber4Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumber4Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumber4: {{ .ExactGoalsNumber4Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumber5Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumber5Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumber5: {{ .ExactGoalsNumber5Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumber6Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumber6Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumber6: {{ .ExactGoalsNumber6Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumberMore7Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumberMore7Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumberMore7: {{ .ExactGoalsNumberMore7Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ToWinEitherHalfHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ToWinEitherHalfHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ToWinEitherHalfHome: {{ .ToWinEitherHalfHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .ToWinEitherHalfAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ToWinEitherHalfAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ToWinEitherHalfAway: {{ .ToWinEitherHalfAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HomeTeamExactGoalsNumber0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HomeTeamExactGoalsNumber0Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HomeTeamExactGoalsNumber0: {{ .HomeTeamExactGoalsNumber0Perc }}
+</a>
+{{ end }}
+
+{{ if gt .HomeTeamExactGoalsNumber1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HomeTeamExactGoalsNumber1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HomeTeamExactGoalsNumber1: {{ .HomeTeamExactGoalsNumber1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .HomeTeamExactGoalsNumber2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HomeTeamExactGoalsNumber2Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HomeTeamExactGoalsNumber2: {{ .HomeTeamExactGoalsNumber2Perc }}
+</a>
+{{ end }}
+
+{{ if gt .HomeTeamExactGoalsNumberMore3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HomeTeamExactGoalsNumberMore3Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HomeTeamExactGoalsNumberMore3: {{ .HomeTeamExactGoalsNumberMore3Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AwayTeamExactGoalsNumber0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AwayTeamExactGoalsNumber0Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AwayTeamExactGoalsNumber0: {{ .AwayTeamExactGoalsNumber0Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AwayTeamExactGoalsNumber1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AwayTeamExactGoalsNumber1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AwayTeamExactGoalsNumber1: {{ .AwayTeamExactGoalsNumber1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AwayTeamExactGoalsNumber2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AwayTeamExactGoalsNumber2Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AwayTeamExactGoalsNumber2: {{ .AwayTeamExactGoalsNumber2Perc }}
+</a>
+{{ end }}
+
+{{ if gt .AwayTeamExactGoalsNumberMore3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/AwayTeamExactGoalsNumberMore3Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       AwayTeamExactGoalsNumberMore3: {{ .AwayTeamExactGoalsNumberMore3Perc }}
+</a>
+{{ end }}
+
+{{ if gt .SecondHalfExactGoalsNumber0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfExactGoalsNumber0Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfExactGoalsNumber0: {{ .SecondHalfExactGoalsNumber0Perc }}
+</a>
+{{ end }}
+
+{{ if gt .SecondHalfExactGoalsNumber1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfExactGoalsNumber1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfExactGoalsNumber1: {{ .SecondHalfExactGoalsNumber1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .SecondHalfExactGoalsNumber2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfExactGoalsNumber2Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfExactGoalsNumber2: {{ .SecondHalfExactGoalsNumber2Perc }}
+</a>
+{{ end }}
+
+{{ if gt .SecondHalfExactGoalsNumber3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfExactGoalsNumber3Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfExactGoalsNumber3: {{ .SecondHalfExactGoalsNumber3Perc }}
+</a>
+{{ end }}
+
+{{ if gt .SecondHalfExactGoalsNumber4Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfExactGoalsNumber4Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfExactGoalsNumber4: {{ .SecondHalfExactGoalsNumber4Perc }}
+</a>
+{{ end }}
+
+{{ if gt .SecondHalfExactGoalsNumberMore5Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/SecondHalfExactGoalsNumberMore5Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       SecondHalfExactGoalsNumberMore5: {{ .SecondHalfExactGoalsNumberMore5Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumberFirstHalf0Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumberFirstHalf0Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumberFirstHalf0: {{ .ExactGoalsNumberFirstHalf0Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumberFirstHalf1Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumberFirstHalf1Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumberFirstHalf1: {{ .ExactGoalsNumberFirstHalf1Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumberFirstHalf2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumberFirstHalf2Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumberFirstHalf2: {{ .ExactGoalsNumberFirstHalf2Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumberFirstHalf3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumberFirstHalf3Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumberFirstHalf3: {{ .ExactGoalsNumberFirstHalf3Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumberFirstHalf4Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumberFirstHalf4Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumberFirstHalf4: {{ .ExactGoalsNumberFirstHalf4Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ExactGoalsNumberFirstHalfMore5Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ExactGoalsNumberFirstHalfMore5Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ExactGoalsNumberFirstHalfMore5: {{ .ExactGoalsNumberFirstHalfMore5Perc }}
+</a>
+{{ end }}
+
+{{ if gt .ToScoreInBothHalvesByTeamsHomePerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ToScoreInBothHalvesByTeamsHomePerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ToScoreInBothHalvesByTeamsHome: {{ .ToScoreInBothHalvesByTeamsHomePerc }}
+</a>
+{{ end }}
+
+{{ if gt .ToScoreInBothHalvesByTeamsAwayPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/ToScoreInBothHalvesByTeamsAwayPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       ToScoreInBothHalvesByTeamsAway: {{ .ToScoreInBothHalvesByTeamsAwayPerc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalGoalsBothTeamsToScoreOverYes25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalGoalsBothTeamsToScoreOverYes25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalGoalsBothTeamsToScoreOverYes25: {{ .TotalGoalsBothTeamsToScoreOverYes25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalGoalsBothTeamsToScoreOverNo25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalGoalsBothTeamsToScoreOverNo25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalGoalsBothTeamsToScoreOverNo25: {{ .TotalGoalsBothTeamsToScoreOverNo25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalGoalsBothTeamsToScoreUnderYes25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalGoalsBothTeamsToScoreUnderYes25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalGoalsBothTeamsToScoreUnderYes25: {{ .TotalGoalsBothTeamsToScoreUnderYes25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalGoalsBothTeamsToScoreUnderNo25Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalGoalsBothTeamsToScoreUnderNo25Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalGoalsBothTeamsToScoreUnderNo25: {{ .TotalGoalsBothTeamsToScoreUnderNo25Perc }}
+</a>
+{{ end }}
+
+{{ if gt .HalftimeResultBothTeamsScoreHomeYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HalftimeResultBothTeamsScoreHomeYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HalftimeResultBothTeamsScoreHomeYes: {{ .HalftimeResultBothTeamsScoreHomeYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HalftimeResultBothTeamsScoreDrawYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HalftimeResultBothTeamsScoreDrawYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HalftimeResultBothTeamsScoreDrawYes: {{ .HalftimeResultBothTeamsScoreDrawYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HalftimeResultBothTeamsScoreAwayYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HalftimeResultBothTeamsScoreAwayYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HalftimeResultBothTeamsScoreAwayYes: {{ .HalftimeResultBothTeamsScoreAwayYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HalftimeResultBothTeamsScoreHomeNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HalftimeResultBothTeamsScoreHomeNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HalftimeResultBothTeamsScoreHomeNo: {{ .HalftimeResultBothTeamsScoreHomeNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HalftimeResultBothTeamsScoreDrawNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HalftimeResultBothTeamsScoreDrawNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HalftimeResultBothTeamsScoreDrawNo: {{ .HalftimeResultBothTeamsScoreDrawNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .HalftimeResultBothTeamsScoreAwayNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/HalftimeResultBothTeamsScoreAwayNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       HalftimeResultBothTeamsScoreAwayNo: {{ .HalftimeResultBothTeamsScoreAwayNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsToScore1StHalf2NdHalfYesYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsToScore1StHalf2NdHalfYesYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsToScore1StHalf2NdHalfYesYes: {{ .BothTeamsToScore1StHalf2NdHalfYesYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsToScore1StHalf2NdHalfYesNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsToScore1StHalf2NdHalfYesNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsToScore1StHalf2NdHalfYesNo: {{ .BothTeamsToScore1StHalf2NdHalfYesNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsToScore1StHalf2NdHalfNoYesPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsToScore1StHalf2NdHalfNoYesPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsToScore1StHalf2NdHalfNoYes: {{ .BothTeamsToScore1StHalf2NdHalfNoYesPerc }}
+</a>
+{{ end }}
+
+{{ if gt .BothTeamsToScore1StHalf2NdHalfNoNoPerc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/BothTeamsToScore1StHalf2NdHalfNoNoPerc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       BothTeamsToScore1StHalf2NdHalfNoNo: {{ .BothTeamsToScore1StHalf2NdHalfNoNoPerc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalGoalsUnder2Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalGoalsUnder2Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalGoalsUnder2: {{ .TotalGoalsUnder2Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalGoals2Or3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalGoals2Or3Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalGoals2Or3: {{ .TotalGoals2Or3Perc }}
+</a>
+{{ end }}
+
+{{ if gt .TotalGoalsOver3Perc 80.0 }}
+<a
+    href="/PatternFrom/Odd/{{ .LeagueapiID}}/{{ .PreAhPattern}}/{{ .PreGouPattern}}/{{ .EndAhPattern}}/{{ .EndGouPattern}}/TotalGoalsOver3Perc"
+    target="_blank"
+    class="badge bg-gray-800 ms-1 me-1 mt-1 mb-1">
+       TotalGoalsOver3: {{ .TotalGoalsOver3Perc }}
+</a>
+{{ end }}
+
+
+{{ end }} 

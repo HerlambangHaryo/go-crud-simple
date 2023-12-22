@@ -1,0 +1,54 @@
+
+{{ if .FixtureStatus }} 
+    {{ if eq .FixtureStatus "Not Started Goto" }}  
+    <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .HomeTeam.Name }}+vs+{{ .AwayTeam.Name }}+flashscore" 
+        class="badge bg-warning mt-2" target="_blank" >  
+        Not Started Goto  
+    </a>  
+    {{ else if eq .FixtureStatus "Not Started" }}  
+    <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .HomeTeam.Name }}+vs+{{ .AwayTeam.Name }}+flashscore" 
+        class="badge bg-warning mt-2" target="_blank" >  
+        Not Started  
+    </a>  
+    {{ else if eq .FixtureStatus "Match Finished" }}  
+    <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .HomeTeam.Name }}+vs+{{ .AwayTeam.Name }}+flashscore" 
+        class="badge bg-dark mt-2" target="_blank" >  
+        Match Finished  
+    </a>  
+    {{ else if eq .FixtureStatus "Match Finished Ended" }}  
+    <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .HomeTeam.Name }}+vs+{{ .AwayTeam.Name }}+flashscore" 
+        class="badge bg-dark mt-2" target="_blank" >  
+        Match Finished Ended  
+    </a>  
+    {{ else }} 
+    <span class="badge bg-dark" >
+        {{ .FixtureStatus }}
+    </span> 
+    {{ end }} 
+{{ else }}  
+    {{ if eq .FixtureTeam.FixtureStatus "Not Started Goto" }}  
+        <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .FixtureTeam.HomeTeam.Name }}+vs+{{ .FixtureTeam.AwayTeam.Name }}+flashscore" 
+            class="badge bg-warning mt-2" target="_blank" >  
+            Not Started Goto  
+        </a>  
+    {{ else if eq .FixtureTeam.FixtureStatus "Not Started" }}  
+        <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .FixtureTeam.HomeTeam.Name }}+vs+{{ .FixtureTeam.AwayTeam.Name }}+flashscore" 
+            class="badge bg-warning mt-2" target="_blank" >  
+            Not Started  
+        </a>  
+    {{ else if eq .FixtureTeam.FixtureStatus "Match Finished" }}  
+        <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .FixtureTeam.HomeTeam.Name }}+vs+{{ .FixtureTeam.AwayTeam.Name }}+flashscore" 
+            class="badge bg-dark mt-2" target="_blank" >  
+            Match Finished  
+        </a>  
+    {{ else if eq .FixtureTeam.FixtureStatus "Match Finished Ended" }}  
+        <a  href="https://www.google.com/search?client=firefox-b-d&amp;q={{ .FixtureTeam.HomeTeam.Name }}+vs+{{ .FixtureTeam.AwayTeam.Name }}+flashscore" 
+            class="badge bg-dark mt-2" target="_blank" >  
+            Match Finished Ended  
+        </a>  
+    {{ else }} 
+        <span class="badge bg-dark" >
+            {{ .FixtureTeam.FixtureStatus }}
+        </span> 
+    {{ end }} 
+{{ end }} 

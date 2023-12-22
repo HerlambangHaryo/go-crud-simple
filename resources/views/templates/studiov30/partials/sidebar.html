@@ -8,7 +8,7 @@
             <div class="menu-header">Nav</div>
 
             
-            <div class="menu-item  active ">
+            <div class="menu-item {{ if eq .Content "Dashboard" }} active {{ end }} ">
                 <a href="/Dashboard" class="menu-link">
                     <span class="menu-icon">
                         <i class="fas fa-tachometer-alt"></i>
@@ -17,20 +17,9 @@
                         Dashboard
                     </span>
                 </a>
-            </div>
+            </div> 
 
-            <div class="menu-item ">
-                <a href="/AboutApp" class="menu-link">
-                    <span class="menu-icon">
-                        <i class="fas fa-id-card "></i>
-                    </span>
-                    <span class="menu-text">
-                        AboutApp
-                    </span>
-                </a>
-            </div>
-
-            <div class="menu-item ">
+            <div class="menu-item {{ if eq .Content "Rapidapis" }} active {{ end }} ">
                 <a href="/Rapidapis" class="menu-link">
                     <span class="menu-icon">
                         <i class="fa-solid fa-fire"></i>
@@ -41,7 +30,7 @@
                 </a>
             </div>
 
-            <div class="menu-item ">
+            <div class="menu-item {{ if eq .Content "Countries" }} active {{ end }} ">
                 <a href="/Countries" class="menu-link">
                     <span class="menu-icon">
                         <i class="fas fa-globe"></i>
@@ -52,7 +41,7 @@
                 </a>
             </div>
 
-            <div class="menu-item ">
+            <div class="menu-item {{ if eq .Content "Leagues" }} active {{ end }} ">
                 <a href="/Leagues" class="menu-link">
                     <span class="menu-icon">
                         <i class="fas fa-trophy"></i>
@@ -63,7 +52,7 @@
                 </a>
             </div>
 
-            <div class="menu-item ">
+            <div class="menu-item {{ if eq .Content "Today" }} active {{ end }} ">
                 <a href="/Today" class="menu-link">
                     <span class="menu-icon">
                         <i class="fas fa-play-circle"></i>
@@ -74,51 +63,20 @@
                 </a>
             </div>
 
-            <div class="menu-item ">
-                <a href="/Forecasts" class="menu-link">
+
+            <div class="menu-item {{ if eq .Content "Ultimate" }} active {{ end }} ">
+                <a href="/Ultimate" class="menu-link">
                     <span class="menu-icon">
-                        <i class="fas fa-hat-wizard"></i>
+                        <i class="fas fa-chess-queen"></i>
                     </span>
                     <span class="menu-text">
-                        Forecasts
+                        Ultimate
                     </span>
                 </a>
             </div>
+             
 
-            <div class="menu-item ">
-                <a href="/Tomorrow" class="menu-link">
-                    <span class="menu-icon">
-                        <i class="fas fa-fast-forward"></i>
-                    </span>
-                    <span class="menu-text">
-                        Tomorrow
-                    </span>
-                </a>
-            </div>
-
-            <div class="menu-item ">
-                <a href="/Favorites" class="menu-link">
-                    <span class="menu-icon">
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span class="menu-text">
-                        Favorites
-                    </span>
-                </a>
-            </div>
-
-            <div class="menu-item ">
-                <a href="/Oneye" class="menu-link">
-                    <span class="menu-icon">
-                        <i class="far fa-eye"></i>
-                    </span>
-                    <span class="menu-text">
-                        Oneye
-                    </span>
-                </a>
-            </div>
-
-            <div class="menu-item ">
+            <div class="menu-item {{ if eq .Content "One" }} active {{ end }} ">
                 <a href="/One" class="menu-link">
                     <span class="menu-icon">
                         <i class="fas fa-bullseye"></i>
@@ -128,37 +86,15 @@
                     </span>
                 </a>
             </div>
+ 
 
-            <div class="menu-item ">
-                <a href="/Matchdone" class="menu-link">
+            <div class="menu-item {{ if eq .Content "MatchDone" }} active {{ end }} ">
+                <a href="/MatchDone" class="menu-link">
                     <span class="menu-icon">
-                        <i class="far fa-calendar-check"></i>
+                        <i class="fas fa-bullseye"></i>
                     </span>
                     <span class="menu-text">
                         Match Done
-                    </span>
-                </a>
-            </div>
-
-            <div class="menu-item ">
-                <a href="/Matchfinished" class="menu-link">
-                    <span class="menu-icon">
-                        <i class="fas fa-flag-checkered"></i>
-                    </span>
-                    <span class="menu-text">
-                        Match Finished
-                    </span>
-                </a>
-            </div>
-
-
-            <div class="menu-item ">
-                <a href="/Ultimate" class="menu-link">
-                    <span class="menu-icon">
-                        <i class="fas fa-chess-queen"></i>
-                    </span>
-                    <span class="menu-text">
-                        Ultimate
                     </span>
                 </a>
             </div>

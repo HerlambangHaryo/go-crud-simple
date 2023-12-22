@@ -1,0 +1,437 @@
+{{template "includes/sub_menu/fixtures" .}}
+ 
+
+<div class="row text-center"> 
+    <h2>
+        Corners
+    </h2>
+    <div id="apexLineChartCorners"></div>
+</div>
+<div class="row text-center"> 
+    <h2>
+        Total Shots
+    </h2>
+    <div id="apexLineChartTotalShots"></div>
+</div>
+<div class="row text-center"> 
+    <h2>
+        Shots on Goal
+    </h2>
+    <div id="apexLineChartShotsOnGoal"></div>
+</div>
+<div class="row text-center"> 
+    <h2>
+        Match Fouls
+    </h2>
+    <div id="apexLineChartFouls"></div>
+</div>
+<div class="row text-center"> 
+    <h2>
+        Offsides
+    </h2>
+    <div id="apexLineChartOffsides"></div>
+</div>
+
+
+{{ define "scripts-go" }} 
+<script>
+    var handleRenderApexChart = function() {
+        Apex = {
+            grid: {
+                borderColor: 'rgba(' + app.color.componentColorRgb + ', .15)'
+            },
+            title: {
+                style: {
+                    color: app.color.componentColor
+                }
+            },
+            legend: {
+                labels: {
+                    colors: app.color.componentColor
+                }
+            },
+            xaxis: {
+                axisBorder: {
+                    show: true,
+                    color: 'rgba(' + app.color.componentColorRgb + ', .25)',
+                    height: 1,
+                    width: '100%',
+                    offsetX: 0,
+                    offsetY: -1
+                },
+                axisTicks: {
+                    show: true,
+                    borderType: 'solid',
+                    color: 'rgba(' + app.color.componentColorRgb + ', .25)',
+                    height: 6,
+                    offsetX: 0,
+                    offsetY: 0
+                },
+                labels: {
+                    style: {
+                        colors: app.color.componentColor,
+                        fontSize: app.font.size,
+                        fontFamily: app.font.family,
+                        fontWeight: 400,
+                        cssClass: 'apexcharts-xaxis-label',
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        colors: app.color.componentColor,
+                        fontSize: app.font.size,
+                        fontFamily: app.font.family,
+                        fontWeight: 400,
+                        cssClass: 'apexcharts-xaxis-label',
+                    }
+                }
+            }
+        };
+ 
+        $('#apexLineChartCorners').empty(); 
+        var apexLineChartCornersOptions = {
+            chart: {
+                height: 250,
+                type: 'line',
+                toolbar: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Data Corners',
+                align: 'center'
+            },
+            colors: [app.color.blue, app.color.orange],
+            dataLabels: {
+                enabled: true,
+                background: {
+                    borderWidth: 0
+                },
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 3
+            },
+            series: [{
+                name: '{{ .HomeTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesHome }} 
+                        {{ .CornerKicks }}, 
+                    {{ end }}
+                ]
+            }, {
+                name: '{{ .AwayTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesAway }} 
+                        {{ .CornerKicks }}, 
+                    {{ end }}
+                ]
+            } ],
+            grid: {
+                row: {
+                    colors: ['rgba(' + app.color.componentColorRgb + ', .1)', 'transparent'],
+                    opacity: 0.5
+                },
+            },
+            markers: {
+                size: 4
+            },
+            xaxis: {
+                categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+            },
+            yaxis: {
+                tickAmount: 4,
+                min: 0,
+                max: 15
+            },
+            legend: {
+                show: true,
+                position: 'top',
+                offsetY: -100,
+                horizontalAlign: 'right',
+                floating: true,
+            }
+        }; 
+        var apexLineChartCorners = new ApexCharts(document.querySelector('#apexLineChartCorners'), apexLineChartCornersOptions); 
+        apexLineChartCorners.render();
+
+        $('#apexLineChartTotalShots').empty(); 
+        var apexLineChartTotalShotsOptions = {
+            chart: {
+                height: 250,
+                type: 'line',
+                toolbar: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Data TotalShots',
+                align: 'center'
+            },
+            colors: [app.color.blue, app.color.orange],
+            dataLabels: {
+                enabled: true,
+                background: {
+                    borderWidth: 0
+                },
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 3
+            },
+            series: [{
+                name: '{{ .HomeTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesHome }} 
+                        {{ .TotalShots }}, 
+                    {{ end }}
+                ]
+            }, {
+                name: '{{ .AwayTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesAway }} 
+                        {{ .TotalShots }}, 
+                    {{ end }}
+                ]
+            } ],
+            grid: {
+                row: {
+                    colors: ['rgba(' + app.color.componentColorRgb + ', .1)', 'transparent'],
+                    opacity: 0.5
+                },
+            },
+            markers: {
+                size: 4
+            },
+            xaxis: {
+                categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+            },
+            yaxis: {
+                tickAmount: 4,
+                min: 0,
+                max: 35
+            },
+            legend: {
+                show: true,
+                position: 'top',
+                offsetY: -100,
+                horizontalAlign: 'right',
+                floating: true,
+            }
+        }; 
+        var apexLineChartTotalShots = new ApexCharts(document.querySelector('#apexLineChartTotalShots'), apexLineChartTotalShotsOptions); 
+        apexLineChartTotalShots.render();
+
+        $('#apexLineChartShotsOnGoal').empty(); 
+        var apexLineChartShotsOnGoalOptions = {
+            chart: {
+                height: 250,
+                type: 'line',
+                toolbar: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Data ShotsOnGoal',
+                align: 'center'
+            },
+            colors: [app.color.blue, app.color.orange],
+            dataLabels: {
+                enabled: true,
+                background: {
+                    borderWidth: 0
+                },
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 3
+            },
+            series: [{
+                name: '{{ .HomeTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesHome }} 
+                        {{ .ShotsOnGoal }}, 
+                    {{ end }}
+                ]
+            }, {
+                name: '{{ .AwayTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesAway }} 
+                        {{ .ShotsOnGoal }}, 
+                    {{ end }}
+                ]
+            } ],
+            grid: {
+                row: {
+                    colors: ['rgba(' + app.color.componentColorRgb + ', .1)', 'transparent'],
+                    opacity: 0.5
+                },
+            },
+            markers: {
+                size: 4
+            },
+            xaxis: {
+                categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+            },
+            yaxis: {
+                tickAmount: 4,
+                min: 0,
+                max: 15
+            },
+            legend: {
+                show: true,
+                position: 'top',
+                offsetY: -100,
+                horizontalAlign: 'right',
+                floating: true,
+            }
+        }; 
+        var apexLineChartShotsOnGoal = new ApexCharts(document.querySelector('#apexLineChartShotsOnGoal'), apexLineChartShotsOnGoalOptions); 
+        apexLineChartShotsOnGoal.render();
+
+        $('#apexLineChartFouls').empty(); 
+        var apexLineChartFoulsOptions = {
+            chart: {
+                height: 250,
+                type: 'line',
+                toolbar: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Data Fouls',
+                align: 'center'
+            },
+            colors: [app.color.blue, app.color.orange],
+            dataLabels: {
+                enabled: true,
+                background: {
+                    borderWidth: 0
+                },
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 3
+            },
+            series: [{
+                name: '{{ .HomeTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesHome }} 
+                        {{ .Fouls }}, 
+                    {{ end }}
+                ]
+            }, {
+                name: '{{ .AwayTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesAway }} 
+                        {{ .Fouls }}, 
+                    {{ end }}
+                ]
+            } ],
+            grid: {
+                row: {
+                    colors: ['rgba(' + app.color.componentColorRgb + ', .1)', 'transparent'],
+                    opacity: 0.5
+                },
+            },
+            markers: {
+                size: 4
+            },
+            xaxis: {
+                categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+            },
+            yaxis: {
+                tickAmount: 4,
+                min: 0,
+                max: 25
+            },
+            legend: {
+                show: true,
+                position: 'top',
+                offsetY: -100,
+                horizontalAlign: 'right',
+                floating: true,
+            }
+        }; 
+        var apexLineChartFouls = new ApexCharts(document.querySelector('#apexLineChartFouls'), apexLineChartFoulsOptions); 
+        apexLineChartFouls.render();
+
+        $('#apexLineChartOffsides').empty(); 
+        var apexLineChartOffsidesOptions = {
+            chart: {
+                height: 250,
+                type: 'line',
+                toolbar: {
+                    show: false
+                }
+            },
+            title: {
+                text: 'Data Offsides',
+                align: 'center'
+            },
+            colors: [app.color.blue, app.color.orange],
+            dataLabels: {
+                enabled: true,
+                background: {
+                    borderWidth: 0
+                },
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 3
+            },
+            series: [{
+                name: '{{ .HomeTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesHome }} 
+                        {{ .Offsides }}, 
+                    {{ end }}
+                ]
+            }, {
+                name: '{{ .AwayTeam.Name }}',
+                data: [ 
+                    {{ range .dataPreGamesAway }} 
+                        {{ .Offsides }}, 
+                    {{ end }}
+                ]
+            } ],
+            grid: {
+                row: {
+                    colors: ['rgba(' + app.color.componentColorRgb + ', .1)', 'transparent'],
+                    opacity: 0.5
+                },
+            },
+            markers: {
+                size: 4
+            },
+            xaxis: {
+                categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+            },
+            yaxis: {
+                tickAmount: 4,
+                min: 0,
+                max: 7
+            },
+            legend: {
+                show: true,
+                position: 'top',
+                offsetY: -100,
+                horizontalAlign: 'right',
+                floating: true,
+            }
+        }; 
+        var apexLineChartOffsides = new ApexCharts(document.querySelector('#apexLineChartOffsides'), apexLineChartOffsidesOptions); 
+        apexLineChartOffsides.render();
+
+    };
+
+    $(document).ready(function() {
+        handleRenderApexChart();
+        $(document).on('theme-change', function() {
+            handleRenderApexChart();
+        });
+    });
+</script>
+{{ end }}

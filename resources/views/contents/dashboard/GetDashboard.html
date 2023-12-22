@@ -1,0 +1,132 @@
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <div class="btn-group">
+            <a
+                href="/AnytimeGoalScorers/Today"
+                class="btn btn-sm btn-secondary ">
+                Anytime Goal Scorers
+            </a> 
+            <a
+                href="/Today/Anytime_goal_scorers"
+                class="btn btn-sm btn-secondary ">
+                Team with Stats
+            </a> 
+        </div>
+    </div>
+</div>
+ 
+<div class="row mb-4"> 
+	<div class="col-3"> 
+		<div class="card ">	 
+			<div class="card-body">
+				<div class="d-flex mb-3">
+					<div class="flex-grow-1">
+						<h5 class="mb-1">
+							New Pattern & Non Pattern 
+						</h5> 
+					</div> 
+				</div> 
+				
+				<div class="progress mb-4" style="height: 10px;"> 
+					<div class="progress-bar bg-teal" style="width: {{printf "%.2f" .CountPre}}%"></div> 
+					<div class="progress-bar bg-gray-200" style="width: {{printf "%.2f" .CountOtherPre}}%"></div>
+				</div>
+				
+				<div class="fs-13px"> 
+					<div class="d-flex align-items-center mb-2">
+						<div class="flex-grow-1 d-flex align-items-center">
+							<i class="fa fa-circle fs-9px fa-fw text-teal me-2"></i> Pre 
+						</div>
+						<div class="fw-600 text-dark">{{printf "%.2f" .CountPre}}%</div>
+					</div> 
+					<div class="d-flex align-items-center mb-15px">
+						<div class="flex-grow-1 d-flex align-items-center">
+							<i class="fa fa-circle fs-9px fa-fw text-gray-200 me-2"></i> Others
+						</div>
+						<div class="fw-600 text-dark">{{printf "%.2f" .CountOtherPre}}%</div>
+					</div> 
+				</div>
+			</div> 
+		</div> 
+	</div> 
+	<div class="col-3"> 
+		<div class="card ">	 
+			<div class="card-body">
+				<div class="d-flex mb-3">
+					<div class="flex-grow-1">
+						<h5 class="mb-1">
+							Team need Stats
+						</h5> 
+					</div> 
+				</div> 
+				
+				<div class="progress mb-4" style="height: 10px;"> 
+					<div class="progress-bar bg-teal" style="width: 36.80%"></div> 
+					<div class="progress-bar bg-gray-200" style="width: 5.00%"></div>
+				</div>
+				
+				<div class="fs-13px"> 
+					<div class="d-flex align-items-center mb-2">
+						<div class="flex-grow-1 d-flex align-items-center">
+							<i class="fa fa-circle fs-9px fa-fw text-teal me-2"></i> Organic Search
+						</div>
+						<div class="fw-600 text-dark">36.80%</div>
+					</div> 
+					<div class="d-flex align-items-center mb-15px">
+						<div class="flex-grow-1 d-flex align-items-center">
+							<i class="fa fa-circle fs-9px fa-fw text-gray-200 me-2"></i> Others
+						</div>
+						<div class="fw-600 text-dark">5.00%</div>
+					</div> 
+				</div>
+			</div> 
+		</div> 
+	</div> 
+	<div class="col-3"> 
+		<div class="card ">	 
+			<div class="card-body">
+				<div class="d-flex mb-3">
+					<div class="flex-grow-1">
+						<h5 class="mb-1">
+							Team has no BM
+						</h5> 
+					</div> 
+					<a href="#" data-bs-toggle="dropdown" class="text-muted">
+						<i class="far fa-eye"></i> 
+					</a>
+				</div> 
+				
+				<div class="progress mb-4" style="height: 10px;"> 
+					<div class="progress-bar bg-teal" style="width: 36.80%"></div> 
+					<div class="progress-bar bg-gray-200" style="width: 5.00%"></div>
+				</div>
+				
+				<div class="fs-13px"> 
+					<div class="d-flex align-items-center mb-2">
+						<div class="flex-grow-1 d-flex align-items-center">
+							<i class="fa fa-circle fs-9px fa-fw text-teal me-2"></i> Organic Search
+						</div>
+						<div class="fw-600 text-dark">36.80%</div>
+					</div> 
+					<div class="d-flex align-items-center mb-15px">
+						<div class="flex-grow-1 d-flex align-items-center">
+							<i class="fa fa-circle fs-9px fa-fw text-gray-200 me-2"></i> Others
+						</div>
+						<div class="fw-600 text-dark">5.00%</div>
+					</div> 
+				</div>
+			</div> 
+		</div> 
+	</div> 
+</div>
+
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <div class="btn-group">
+            <a 
+                class="btn btn-sm btn-secondary ">
+                Tomorrow
+            </a>  
+        </div>
+    </div>
+</div>

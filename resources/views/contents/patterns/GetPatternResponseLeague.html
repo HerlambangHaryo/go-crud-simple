@@ -1,0 +1,66 @@
+
+<div id="datatable" class="mb-5">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">
+                    Data Row
+                </div>
+                <div class="col-6 text-end"> 
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div>
+                <table id="datatableDefault" class="table  ">
+                    <thead class=" ">
+                        <tr>                            
+                            <th class="text-center">Pre</th>                                  
+                            <th class="text-center">End</th>               
+                            <th class="text-center" width="10%">Counter</th>     
+                        </tr> 
+                    </thead>
+                    <tbody>
+
+                        {{ range .Data }}
+                            <tr> 
+                                <td class="text-center">  
+                                    {{ .FixtureAPIID }}  
+                                </td> 
+                                <td class="text-center">  
+                                    {{ .Season }}  
+                                </td> 
+                                <td class="text-center">  
+                                    {{ .FixtureTeam.Date }}  
+                                </td> 
+                                <td class="text-center"> 
+                                    fxt: {{ .FixtureTeam.FixtureStatus }}
+                                    <br/>  
+                                    odd: {{ .FixtureStatus }}  
+                                </td>   
+                                <td class="text-center">
+                                    <span class="badge bg-gray-900">
+                                        {{ .PreAhPattern }}
+                                    </span>
+                                    <br/>
+                                    <span class="badge bg-gray-900">
+                                        {{ .PreGouPattern }}
+                                    </span>
+                                </td>
+                                <td class="text-center">
+                                    <span class="badge bg-gray-900">
+                                        {{ .EndAhPattern }}
+                                    </span>
+                                    <br/>
+                                    <span class="badge bg-gray-900">
+                                        {{ .EndGouPattern }}
+                                    </span>
+                                </td>
+                            </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
